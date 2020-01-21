@@ -1,0 +1,1 @@
+docker run -d --device=/dev/lirc0:/dev/lirc0:rwm -v /etc/lirc:/etc/lirc --name lirc rpi-lirc
