@@ -1,1 +1,35 @@
-docker run -d --device=/dev/lirc0:/dev/lirc0:rwm -v /etc/lirc:/etc/lirc --name lirc rpi-lirc
+lirc service based on raspberry pi image, and mqtt message client
+
+```bash
+docker run -d --device=/dev/lirc0:/dev/lirc0:rw -v docker/config/lirc:/app/conf --name lirc rpi-lirc
+```
+
+<br />
+docker compose:
+
+```
+lirc:
+container_name: lirc
+restart: always
+image: fireinice/rpi-lirc
+devices:
+	- "/dev/lirc0:/dev/lirc0:rw"
+volumes:
+	- docker/config/lirc:/app/conf
+ports:
+	- "8765:8765"
+networks:
+	- mqtt-backend
+```
+
+
+get conf example from example_conf directory
+
+
+for host raspbian buster  , need to uncomment 2 lines in /boot/config.txt, then restart to enable ``/dev/lirc0``
+
+```
+dtoverlay=gpio-ir,gpio_pin=18      # only receive
+dtoverlay=gpio-ir-tx,gpio_pin=18 # for irsend
+```
+
