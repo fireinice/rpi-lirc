@@ -1,28 +1,31 @@
 # Dockerfile
-
 FROM balenalib/raspberry-pi:buster
 
 MAINTAINER zigler zhang <zigler.zhang@gmail.com>
 
 # Update
-RUN apt-get update -qq  && \
-	apt-get install -qq lirc --no-install-recommends  && \
+RUN apt-get update -qq  && apt-get install -qq --no-install-recommends \
+	lirc \
+	mosquitto-clients \
+	> /dev/null && \
 	apt-get clean && \
-	rm -rf /var/lib/apt-lists/* /tmp/* /var/tmp/ && \
-	echo 'dtoverlay=gpio-ir' >> /boot/config.txt
+	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/ && \
+	echo 'dtoverlay=gpio-ir' >> /boot/config.txt && \
+	mkdir -p /app/conf
+
+VOLUME /var/run/lirc
+
+WORKDIR /app
 
 
-ADD files/lirc_options.conf  /etc/lirc/lirc_options.conf
-ADD files/start.sh /data/start.sh
+COPY files/lirc_options.conf  /etc/lirc/lirc_options.conf
+COPY files/lircd.conf /etc/lirc/lircd.conf
+COPY files/start.sh /app/start.sh
+COPY files/lircrc /etc/lirc/lircrc
 
-# Define working directory
-WORKDIR /data
+
 
 EXPOSE 8765
 
 # Define default command
-ENTRYPOINT [ "/data/start.sh" ]
-
-
-
-
+ENTRYPOINT [ "/app/start.sh" ]

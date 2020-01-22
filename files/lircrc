@@ -1,0 +1,300 @@
+begin
+	button = KEY_P
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_POWER -t remote_sensor
+end
+begin
+	button = KEY_EJECTCD
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_EJECTCD -t remote_sensor
+end
+begin
+	button = KEY_SWITCHVIDEOMODE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_SWITCHVIDEOMODE -t remote_sensor
+end
+begin
+	button = KEY_SETUP
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_SETUP -t remote_sensor
+end
+begin
+	button = KEY_BLUETOOTH
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_BLUETOOTH -t remote_sensor
+end
+begin
+	button = KEY_1
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_1 -t remote_sensor
+end
+begin
+	button = KEY_2
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_2 -t remote_sensor
+end
+begin
+	button = KEY_3
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_3 -t remote_sensor
+end
+begin
+	button = KEY_4
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_4 -t remote_sensor
+end
+begin
+	button = KEY_5
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_5 -t remote_sensor
+end
+begin
+	button = KEY_6
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_6 -t remote_sensor
+end
+begin
+	button = KEY_7
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_7 -t remote_sensor
+end
+begin
+	button = KEY_8
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_8 -t remote_sensor
+end
+begin
+	button = KEY_9
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_9 -t remote_sensor
+end
+begin
+	button = KEY_0
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_0 -t remote_sensor
+end
+begin
+	button = KEY_DELETE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_DELETE -t remote_sensor
+end
+begin
+	button = KEY_CAPSLOCK
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_CAPSLOCK -t remote_sensor
+end
+begin
+	button = KEY_HOMEPAGE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_HOMEPAGE -t remote_sensor
+end
+begin
+	button = KEY_FILE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_FILE -t remote_sensor
+end
+begin
+	button = KEY_SEARCH
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_SEARCH -t remote_sensor
+end
+begin
+	button = KEY_RED
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_RED -t remote_sensor
+end
+begin
+	button = KEY_GREEN
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_GREEN -t remote_sensor
+end
+begin
+	button = KEY_YELLOW
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_YELLOW -t remote_sensor
+end
+begin
+	button = KEY_BLUE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_BLUE -t remote_sensor
+end
+begin
+	button = KEY_BACK
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_BACK -t remote_sensor
+end
+begin
+	button = KEY_CONTEXT_MENU
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_CONTEXT_MENU -t remote_sensor
+end
+begin
+	button = KEY_UP
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_UP -t remote_sensor
+end
+begin
+	button = KEY_DOWN
+	prog   = irexec
+	delay  = 1	
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_DOWN -t remote_sensor
+end
+begin
+	button = KEY_LEFT
+	prog   = irexec
+	delay  = 1		
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_LEFT -t remote_sensor
+end
+begin
+	button = KEY_RIGHT
+	prog   = irexec
+	delay  = 1			
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_RIGHT -t remote_sensor
+end
+begin
+	button = KEY_OK
+	prog   = irexec
+	delay  = 1	
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_OK -t remote_sensor
+end
+begin
+	button = KEY_INFO
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_INFO -t remote_sensor
+end
+begin
+	button = KEY_STOP
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_STOP -t remote_sensor
+end
+begin
+	button = KEY_VOLUMEUP
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_VOLUMEUP -t remote_sensor
+end
+begin
+	button = KEY_VOLUMEDOWN
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_VOLUMEDOWN -t remote_sensor
+end
+begin
+	button = KEY_PLAY
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_PLAY -t remote_sensor
+end
+begin
+	button = KEY_PAUSE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_PAUSE -t remote_sensor
+end
+begin
+	button = KEY_MUTE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_MUTE -t remote_sensor
+end
+begin
+	button = KEY_PREVIOUS
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_PREVIOUS -t remote_sensor
+end
+begin
+	button = KEY_FORWARD
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_FORWARD -t remote_sensor
+end
+begin
+	button = KEY_MENU
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_MENU -t remote_sensor
+end
+begin
+	button = KEY_VIDEO_PREV
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_VIDEO_PREV -t remote_sensor
+end
+begin
+	button = KEY_VIDEO_NEXT
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_VIDEO_NEXT -t remote_sensor
+end
+begin
+	button = KEY_TITLE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_TITLE -t remote_sensor
+end
+begin
+	button = KEY_MEDIA_REPEAT
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_MEDIA_REPEAT -t remote_sensor
+end
+begin
+	button = KEY_SLOW
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_SLOW -t remote_sensor
+end
+begin
+	button = KEY_ANGLE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_ANGLE -t remote_sensor
+end
+begin
+	button = KEY_AUDIO
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_AUDIO -t remote_sensor
+end
+begin
+	button = KEY_SUBTITLE
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_SUBTITLE -t remote_sensor
+end
+begin
+	button = KEY_ZOOM
+	prog   = irexec
+	delay  = 1
+	config = mosquitto_pub -h 127.0.0.1 -p 1883 -m KEY_ZOOM -t remote_sensor
+end
